@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="">
-
-
-<!-- Mirrored from connectme-html.themeyn.com/ui-elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Oct 2024 19:34:29 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <!-- Page Title -->
-    <title>Misc Elements | Components | ConnectMe | Chat Application HTML Template</title>
-    <!-- Page Stylesheets -->
-    <link rel="stylesheet" href="assets/css/bundle0ae1.css?v1310">
-    <link rel="stylesheet" href="assets/css/app0ae1.css?v1310">
-</head>
+<?php include("partition/header.php"); ?>
 
 <body class="tyn-body">
     <div class="tyn-root">
@@ -402,369 +386,194 @@
             </div><!-- .tyn-appbar-wrap -->
         </nav><!-- .tyn-appbar -->
         <div class="tyn-content  tyn-content-page">
-            <div class="tyn-hero">
+            <div class="tyn-main tyn-content-inner" id="tynMain">
                 <div class="container">
-                    <div class="row justify-content-center text-center">
-                        <div class="col-lg-4">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Elements</li>
-                                </ol>
-                            </nav><!-- breadcrumb -->
-                            <h1 class="display-6">Designed Elements</h1>
-                            <p>Some collection of pre designed Elements for your project. lot more comming soon.</p>
-                        </div><!-- .col -->
-                    </div><!-- .row -->
-                </div><!-- .container -->
-            </div><!-- .tyn-hero -->
-            <div class="tyn-main">
-                <div class="tyn-section">
-                    <div class="container">
-                        <div class="row g-gs">
-                            <div class="col-md-6 col-xl-4">
-                                <h6 class="tyn-overline">Media Group / Media with content</h6>
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="tyn-media-list gap gap-3">
-                                            <div class="tyn-media-group">
-                                                <div class="tyn-media tyn-size-xl">
-                                                    <img src="images/avatar/1.jpg" alt="">
-                                                </div><!-- .tyn-media -->
-                                                <div class="tyn-media-col">
-                                                    <div class="tyn-media-row">
-                                                        <h6 class="name">Jasmine Thompson</h6>
-                                                        <div class="indicator varified">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                                                            </svg><!-- check-circle-fill -->
-                                                        </div>
-                                                        <span class="typing">typing ...</span>
-                                                    </div>
-                                                    <div class="tyn-media-row has-dot-sap">
-                                                        <p class="content">Had they visited Rome before</p>
-                                                        <span class="meta">45 min</span>
-                                                    </div>
-                                                </div><!-- .tyn-media-col -->
-                                                <div class="tyn-media-option tyn-aside-item-option">
-                                                    <ul class="tyn-media-option-list">
-                                                        <li class="dropdown">
-                                                            <button class="btn btn-icon btn-white btn-pill dropdown-toggle" data-bs-toggle="dropdown" data-bs-offset="0,0" data-bs-auto-close="outside">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
-                                                                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
-                                                                </svg><!-- three-dots -->
-                                                            </button><!-- .dropdown-toggle -->
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <ul class="tyn-list-links">
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                                                                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
-                                                                            </svg><!-- check -->
-                                                                            <span>Mark as Read</span>
-                                                                        </a>
-                                                                    </li><!-- li -->
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
-                                                                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6" />
-                                                                            </svg><!-- bell -->
-                                                                            <span>Mute Notifications</span>
-                                                                        </a>
-                                                                    </li><!-- li -->
-                                                                    <li>
-                                                                        <a href="contacts.html">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                                                                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
-                                                                            </svg><!-- person -->
-                                                                            <span>View Profile</span>
-                                                                        </a>
-                                                                    </li><!-- li -->
-                                                                    <li class="dropdown-divider"></li><!-- li -->
-                                                                    <li>
-                                                                        <a href="#callingScreen" data-bs-toggle="modal">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                                                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-                                                                            </svg><!-- telephone -->
-                                                                            <span>Audio Call</span>
-                                                                        </a>
-                                                                    </li><!-- li -->
-                                                                    <li>
-                                                                        <a href="#videoCallingScreen" data-bs-toggle="modal">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
-                                                                                <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z" />
-                                                                            </svg><!-- camera-video -->
-                                                                            <span>Video Call</span>
-                                                                        </a>
-                                                                    </li><!-- li -->
-                                                                    <li class="dropdown-divider"></li><!-- li -->
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
-                                                                                <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z" />
-                                                                                <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
-                                                                            </svg><!-- file-earmark-arrow-down -->
-                                                                            <span>Archive</span>
-                                                                        </a>
-                                                                    </li><!-- li -->
-                                                                    <li>
-                                                                        <a href="#deleteChat" data-bs-toggle="modal">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
-                                                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
-                                                                            </svg><!-- trash -->
-                                                                            <span>Delete</span>
-                                                                        </a>
-                                                                    </li><!-- li -->
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
-                                                                                <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z" />
-                                                                                <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
-                                                                            </svg><!-- exclamation-triangle -->
-                                                                            <span>Report</span>
-                                                                        </a>
-                                                                    </li><!-- li -->
-                                                                </ul><!-- .tyn-list-links -->
-                                                            </div><!-- .dropdown-menu -->
-                                                        </li><!-- li -->
-                                                    </ul><!-- .tyn-media-option-list -->
-                                                </div><!-- .tyn-media-option -->
-                                            </div><!-- .tyn-media-group -->
-                                            <div class="tyn-media-group">
-                                                <div class="tyn-media tyn-size-xl">
-                                                    <img src="images/gallery/chat/thumb-7.jpg" alt="">
-                                                </div><!-- .tyn-media -->
-                                                <div class="tyn-media-col">
-                                                    <h6 class="name">Digital Marketing Guide</h6>
-                                                    <div class="anchor">https://www.envato.com/blog/digital-marketing-guide/</div>
-                                                </div><!-- .tyn-media-col -->
-                                            </div><!-- .tyn-media-group -->
-                                            <div class="tyn-media-group align-items-start">
-                                                <div class="tyn-media tyn-size-xl tyn-circle">
-                                                    <img src="images/avatar/3.jpg" alt="">
-                                                </div><!-- .tyn-media -->
-                                                <div class="tyn-media-col">
-                                                    <div class="tyn-media-row">
-                                                        <span class="message"><strong>Thomas Poulain</strong> Added You</span>
-                                                    </div>
-                                                    <div class="tyn-media-row has-dot-sap">
-                                                        <span class="meta">1 weeks ago</span>
-                                                    </div>
-                                                    <div class="tyn-media-row">
-                                                        <ul class="tyn-btn-inline gap gap-3 pt-1">
-                                                            <li><button class="btn btn-md btn-primary">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
-                                                                        <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
-                                                                        <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
-                                                                    </svg><!-- check2-circle -->
-                                                                    <span>Accept</span></button></li>
-                                                            <li><button class="btn btn-md btn-light">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-                                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-                                                                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-                                                                    </svg><!-- x-circle -->
-                                                                    <span>Reject</span></button></li>
-                                                        </ul>
-                                                    </div>
-                                                </div><!-- .tyn-media-col -->
-                                            </div><!-- .tyn-media-group -->
-                                        </div><!-- .tyn-media-list -->
-                                    </div> <!-- .card-body -->
-                                </div><!-- .card -->
-                                <h6 class="tyn-overline mt-4">Profile Dropdown</h6>
-                                <div class="dropdown-menu d-block position-relative">
-                                    <div class="dropdown-gap">
-                                        <div class="tyn-media-group">
-                                            <div class="tyn-media tyn-size-lg">
-                                                <img src="images/avatar/3.jpg" alt="">
-                                            </div><!-- .tyn-media -->
-                                            <div class="tyn-media-col">
-                                                <div class="tyn-media-row">
-                                                    <h6 class="name">Marie George</h6>
-                                                    <div class="indicator varified">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                                                        </svg><!-- check-circle-fill -->
-                                                    </div>
-                                                </div>
-                                                <div class="tyn-media-row has-dot-sap">
-                                                    <p class="content">Liked that disco music</p>
-                                                </div>
-                                            </div><!-- .tyn-media-col -->
-                                        </div><!-- .tyn-media-group -->
-                                    </div><!-- .dropdown-gap -->
-                                    <ul class="tyn-list-links">
-                                        <li>
-                                            <a href="profilef99c.html?tab=profile-index">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
-                                                </svg><!-- person -->
-                                                <span>Profile</span>
-                                            </a>
-                                        </li><!-- li -->
-                                        <li>
-                                            <a href="profiled1a7.html?tab=profile-settings">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
-                                                    <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />
-                                                    <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z" />
-                                                </svg><!-- gear -->
-                                                <span>Settings</span>
-                                            </a>
-                                        </li><!-- li -->
-                                        <li>
-                                            <a href="profilefedd.html?tab=profile-change-password">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-unlock" viewBox="0 0 16 16">
-                                                    <path d="M11 1a2 2 0 0 0-2 2v4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h5V3a3 3 0 0 1 6 0v4a.5.5 0 0 1-1 0V3a2 2 0 0 0-2-2M3 8a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z" />
-                                                </svg><!-- unlock -->
-                                                <span>Change Password</span>
-                                            </a>
-                                        </li><!-- li -->
-                                        <li class="dropdown-divider"></li>
-                                        <li>
-                                            <a href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
-                                                    <path d="M7.5 1v7h1V1z" />
-                                                    <path d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812" />
-                                                </svg><!-- power -->
-                                                <span>Log Out</span>
-                                            </a>
-                                        </li><!-- li -->
-                                    </ul><!-- .tyn-list-links -->
-                                </div><!-- .dropdown-menu -->
-                            </div><!-- .col -->
-                            <div class="col-md-6 col-xl-4">
-                                <h6 class="tyn-overline">Image Gallery</h6>
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row g-3">
-                                            <div class="col-4">
-                                                <a href="images/gallery/chat/1.jpg" class="glightbox tyn-thumb" data-gallery="media-photo">
-                                                    <img src="images/gallery/chat/thumb-1.jpg" class="tyn-image" alt="">
-                                                </a>
-                                            </div><!-- .col -->
-                                            <div class="col-4">
-                                                <a href="images/gallery/chat/2.jpg" class="glightbox tyn-thumb" data-gallery="media-photo">
-                                                    <img src="images/gallery/chat/thumb-2.jpg" class="tyn-image" alt="">
-                                                </a>
-                                            </div><!-- .col -->
-                                            <div class="col-4">
-                                                <a href="images/gallery/chat/3.jpg" class="glightbox tyn-thumb" data-gallery="media-photo">
-                                                    <img src="images/gallery/chat/thumb-3.jpg" class="tyn-image" alt="">
-                                                </a>
-                                            </div><!-- .col -->
-                                            <div class="col-4">
-                                                <a href="images/gallery/chat/4.jpg" class="glightbox tyn-thumb" data-gallery="media-photo">
-                                                    <img src="images/gallery/chat/thumb-4.jpg" class="tyn-image" alt="">
-                                                </a>
-                                            </div><!-- .col -->
-                                            <div class="col-4">
-                                                <a href="images/gallery/chat/5.jpg" class="glightbox tyn-thumb" data-gallery="media-photo">
-                                                    <img src="images/gallery/chat/thumb-5.jpg" class="tyn-image" alt="">
-                                                </a>
-                                            </div><!-- .col -->
-                                            <div class="col-4">
-                                                <a href="images/gallery/chat/6.jpg" class="glightbox tyn-thumb" data-gallery="media-photo">
-                                                    <img src="images/gallery/chat/thumb-6.jpg" class="tyn-image" alt="">
-                                                </a>
-                                            </div><!-- .col -->
-                                        </div><!-- .row -->
-                                    </div><!-- .card-body -->
-                                </div><!-- .card -->
-                                <h6 class="tyn-overline mt-4">Contact Card</h6>
-                                <div class="row gx-3">
-                                    <div class="col-6">
-                                        <div class="bg-white border  rounded-3 p-4 d-flex flex-column align-items-center text-center">
-                                            <div class="tyn-media tyn-size-2xl tyn-circle mb-3">
-                                                <img src="images/avatar/5.jpg" alt="">
-                                            </div>
-                                            <span class="tyn-subtext mb-1">@enne_nolan</span>
-                                            <h6>Nolan Etienne</h6>
-                                        </div>
-                                    </div><!-- .col -->
-                                    <div class="col-6">
-                                        <div class="bg-white border  rounded-3 p-4 d-flex flex-column align-items-center text-center">
-                                            <div class="tyn-media tyn-size-2xl tyn-circle mb-3">
-                                                <img src="images/avatar/3.jpg" alt="">
-                                            </div>
-                                            <span class="tyn-subtext mb-1">@konstatin_nk</span>
-                                            <h6>Konstantin Frank</h6>
-                                        </div>
-                                    </div><!-- .col -->
-                                </div><!-- .row -->
-                            </div><!-- .col -->
-                            <div class="col-md-6 col-xl-4">
-                                <h6 class="tyn-overline">Video Gallery</h6>
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row g-3">
-                                            <div class="col-6">
-                                                <a href="https://www.youtube.com/watch?v=ag0qTaAKqT8" class="glightbox tyn-video" data-gallery="media-video">
-                                                    <img src="images/gallery/video/hr-1.jpg" class="tyn-image" alt="">
-                                                    <div class="tyn-video-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
-                                                        </svg><!-- play-fill -->
-                                                    </div>
-                                                </a>
-                                            </div><!-- .col -->
-                                            <div class="col-6">
-                                                <a href="https://www.youtube.com/watch?v=ag0qTaAKqT8" class="glightbox tyn-video" data-gallery="media-video">
-                                                    <img src="images/gallery/video/hr-2.jpg" class="tyn-image" alt="">
-                                                    <div class="tyn-video-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
-                                                        </svg><!-- play-fill -->
-                                                    </div>
-                                                </a>
-                                            </div><!-- .col -->
-                                            <div class="col-6">
-                                                <a href="https://www.youtube.com/watch?v=ag0qTaAKqT8" class="glightbox tyn-video" data-gallery="media-video">
-                                                    <img src="images/gallery/video/hr-3.jpg" class="tyn-image" alt="">
-                                                    <div class="tyn-video-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
-                                                        </svg><!-- play-fill -->
-                                                    </div>
-                                                </a>
-                                            </div><!-- .col -->
-                                            <div class="col-6">
-                                                <a href="https://www.youtube.com/watch?v=ag0qTaAKqT8" class="glightbox tyn-video" data-gallery="media-video">
-                                                    <img src="images/gallery/video/hr-4.jpg" class="tyn-image" alt="">
-                                                    <div class="tyn-video-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
-                                                        </svg><!-- play-fill -->
-                                                    </div>
-                                                </a>
-                                            </div><!-- .col -->
-                                            <div class="col-6">
-                                                <a href="https://www.youtube.com/watch?v=ag0qTaAKqT8" class="glightbox tyn-video" data-gallery="media-video">
-                                                    <img src="images/gallery/video/vr-5.jpg" class="tyn-image" alt="">
-                                                    <div class="tyn-video-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
-                                                        </svg><!-- play-fill -->
-                                                    </div>
-                                                </a>
-                                            </div><!-- .col -->
-                                            <div class="col-6">
-                                                <a href="https://www.youtube.com/watch?v=ag0qTaAKqT8" class="glightbox tyn-video" data-gallery="media-video">
-                                                    <img src="images/gallery/video/hr-6.jpg" class="tyn-image" alt="">
-                                                    <div class="tyn-video-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
-                                                        </svg><!-- play-fill -->
-                                                    </div>
-                                                </a>
-                                            </div><!-- .col -->
-                                        </div><!-- .row -->
+                    <div class="tyn-profile">
+                        <div class="tyn-profile-head">
+                            <div class="tyn-profile-cover">
+                                <img class="tyn-profile-cover-image" src="images/cover/2.jpg" alt="">
+                            </div><!-- .tyn-profile-cover -->
+                            <div class="tyn-profile-info">
+                                <div class="tyn-media-group align-items-start">
+                                    <div class="tyn-media tyn-media-bordered tyn-size-4xl tyn-profile-avatar">
+                                        <img src="images/avatar/1.jpg" alt="">
                                     </div>
-                                </div>
-                            </div><!-- .col -->
-                        </div><!-- .row -->
-                    </div><!-- .container -->
-                </div><!-- .tyn-section -->
+                                    <div class="tyn-media-col">
+                                        <div class="tyn-media-row">
+                                            <h4 class="name">Nina Dubois <span class="username">@nina_dubois</span></h4>
+                                        </div><!-- .tyn-media-row -->
+                                        <div class="tyn-media-row has-dot-sap">
+                                            <span class="content">287 Contacts</span>
+                                            <span class="meta">8 Groups</span>
+                                        </div><!-- .tyn-media-row -->
+                                        <div class="tyn-media-row pt-2">
+                                            <div class="tyn-media-multiple">
+                                                <div class="tyn-media tyn-circle tyn-size-md tyn-media-bordered">
+                                                    <img src="images/avatar/2.jpg" alt="">
+                                                </div>
+                                                <div class="tyn-media tyn-circle tyn-size-md tyn-media-bordered">
+                                                    <img src="images/avatar/3.jpg" alt="">
+                                                </div>
+                                                <div class="tyn-media tyn-circle tyn-size-md tyn-media-bordered">
+                                                    <img src="images/avatar/4.jpg" alt="">
+                                                </div>
+                                                <div class="tyn-media tyn-circle tyn-size-md tyn-media-bordered">
+                                                    <img src="images/avatar/5.jpg" alt="">
+                                                </div>
+                                                <div class="tyn-media tyn-circle tyn-size-md tyn-media-bordered">
+                                                    <img src="images/avatar/6.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div><!-- .tyn-media-row -->
+                                    </div><!-- .tyn-media-col -->
+                                </div><!-- .tyn-media-group -->
+                            </div><!-- .tyn-profile-info -->
+                        </div><!-- .tyn-profile-head -->
+                        <div class="tyn-profile-nav">
+                            <ul class="nav nav-tabs nav-tabs-line">
+                                <li class="nav-item">
+                                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-edit" type="button"> Edit Profile </button>
+                                </li><!-- li -->
+                            </ul><!-- .nav-tabs -->
+                        </div><!-- .tyn-profile-nav -->
+                        <div class="tyn-profile-details">
+                            <div class="tab-content">
+                                <div class="tab-pane show active" id="profile-edit" tabindex="0">
+                                    <div class="row gy-5">
+                                        <div class="col-12">
+                                            <div class="row gy-4">
+                                                <div class="col-lg-3">
+                                                    <h6>Personal Information</h6>
+                                                    <div class="tyn-subtext">Edit Your personal Info</div>
+                                                </div><!-- .col -->
+                                                <div class="col-lg-9">
+                                                    <div class="row g-gs">
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group">
+                                                                <label class="form-label" for="firstName">First Name</label>
+                                                                <div class="form-control-wrap">
+                                                                    <input type="text" class="form-control" id="firstName" placeholder="Your Name" value="Nina">
+                                                                </div>
+                                                            </div><!-- .form-group -->
+                                                        </div><!-- .col -->
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group">
+                                                                <label class="form-label" for="lastName">Last Name</label>
+                                                                <div class="form-control-wrap">
+                                                                    <input type="text" class="form-control" id="lastName" placeholder="Your Name" value="Dubois">
+                                                                </div>
+                                                            </div><!-- .form-group -->
+                                                        </div><!-- .col -->
+                                                        <div class="col-12">
+                                                            <div class="form-group">
+                                                                <label class="form-label d-flex" for="primaryEmail">Main Email <span class="small ms-2 text-success">Varified</span> <a href="#" class="link link-primary ms-auto">Add Email</a></label>
+                                                                <div class="form-control-wrap">
+                                                                    <input type="text" class="form-control" id="primaryEmail" disabled placeholder="Primary Email" value="nina_dubois@themeyn.com">
+                                                                </div>
+                                                                <div class="tyn-subtext mt-2">You need to have at least one email connected with your account</div>
+                                                            </div><!-- .form-group -->
+                                                        </div><!-- .col -->
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group">
+                                                                <label class="form-label" for="phoneNumber">Phone Number</label>
+                                                                <div class="form-control-wrap">
+                                                                    <input type="text" class="form-control" id="phoneNumber" placeholder="Your Number" value="0098 4654 554">
+                                                                </div>
+                                                            </div><!-- .form-group -->
+                                                        </div><!-- .col -->
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group">
+                                                                <label class="form-label" for="phoneNumber">Country</label>
+                                                                <div class="form-control-wrap">
+                                                                    <select class="form-select">
+                                                                        <option value="Afghanistan">Afghanistan</option>
+                                                                        <option value="Åland Islands">Åland Islands</option>
+                                                                        <option value="Albania">Albania</option>
+                                                                        <option value="Algeria">Algeria</option>
+                                                                        <option value="American Samoa">American Samoa</option>
+                                                                        <option value="Andorra">Andorra</option>
+                                                                        <option value="Angola">Angola</option>
+                                                                        <option value="Anguilla">Anguilla</option>
+                                                                        <option value="Antarctica">Antarctica</option>
+                                                                        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                                                        <option value="Argentina">Argentina</option>
+                                                                        <option selected value="Armenia">Armenia</option>
+                                                                        <option value="Aruba">Aruba</option>
+                                                                        <option value="Australia">Australia</option>
+                                                                        <option value="Austria">Austria</option>
+                                                                        <option value="Azerbaijan">Azerbaijan</option>
+                                                                        <option value="Bahamas">Bahamas</option>
+                                                                        <option value="Bahrain">Bahrain</option>
+                                                                        <option value="Bangladesh">Bangladesh</option>
+                                                                        <option value="Barbados">Barbados</option>
+                                                                        <option value="Belarus">Belarus</option>
+                                                                        <option value="Belgium">Belgium</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div><!-- .form-group -->
+                                                        </div><!-- .col -->
+                                                    </div><!-- .row -->
+                                                </div><!-- .col -->
+                                            </div><!-- .row -->
+                                        </div><!-- .col -->
+                                        <div class="col-12">
+                                            <div class="row gy-4">
+                                                <div class="col-lg-3">
+                                                    <h6>Sign-in Method</h6>
+                                                    <div class="tyn-subtext">Edit Your personal Info</div>
+                                                </div><!-- .col -->
+                                                <div class="col-lg-9">
+                                                    <div class="row g-gs">
+                                                        <div class="col-12">
+                                                            <div class="border rounded-2 p-3 position-relative">
+                                                                <div class="d-flex flex-wrap flex-sm-nowrap justify-content-between align-items-center w-100 pe-5">
+                                                                    <div class="tyn-media-group mw-100">
+                                                                        <div class="tyn-media text-bg-danger">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                                                                                <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
+                                                                            </svg><!-- google -->
+                                                                        </div><!-- .tyn-media -->
+                                                                        <div class="tyn-media-col">
+                                                                            <h6 class="name">Google Account</h6>
+                                                                            <span class="content">Your google account is connected.</span>
+                                                                        </div>
+                                                                    </div><!-- .tyn-media-group -->
+                                                                    <div class="position-absolute end-0 me-3">
+                                                                        <div class="form-check form-check-reverse form-switch">
+                                                                            <input class="form-check-input" checked type="checkbox" role="switch" id="googleAccount">
+                                                                        </div>
+                                                                    </div>
+                                                                </div><!-- .d-flex -->
+                                                            </div><!-- .border -->
+                                                        </div><!-- .col -->
+                                                        <div class="col-12">
+                                                            <div class="border rounded-2 p-3">
+                                                                <div class="d-flex flex-wrap flex-sm-nowrap justify-content-between align-items-center">
+                                                                    <div class="tyn-media-group w-100">
+                                                                        <div class="tyn-media text-bg-primary">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                                                            </svg><!-- facebook -->
+                                                                        </div><!-- .tyn-media -->
+                                                                        <div class="tyn-media-col">
+                                                                            <h6 class="name">Facebook Account</h6>
+                                                                            <span class="content">You can connect with your facebook account.</span>
+                                                                        </div>
+                                                                    </div><!-- .tyn-media-group -->
+                                                                    <div class="ms-5 mt-3 mt-sm-0 ms-sm-0"><button class="btn btn-sm btn-primary ms-2">Connect</button></div>
+                                                                </div><!-- .d-flex -->
+                                                            </div><!-- .border -->
+                                                        </div><!-- .col -->
+                                                    </div><!-- .row -->
+                                                </div><!-- .col -->
+                                            </div><!-- .row -->
+                                        </div><!-- .col -->
+                                    </div><!-- .row -->
+                                </div><!-- .tab-pane -->
+                            </div><!-- .tab-content -->
+                        </div><!-- .tyn-profile-details -->
+                    </div><!-- .tyn-profile -->
+                </div><!-- .container -->
             </div><!-- .tyn-main -->
         </div><!-- .tyn-content -->
         <div class="tyn-quick-chat" id="tynQuickChat">
@@ -860,11 +669,284 @@
             </div><!-- .tyn-quick-chat-box -->
         </div><!-- .tyn-quick-chat -->
     </div><!-- .tyn-root -->
+    <div class="modal fade" tabindex="-1" id="callingScreen" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content border-0">
+                <div class="tyn-chat-call">
+                    <div class="tyn-chat-cover">
+                        <img src="images/cover/1.jpg" alt="">
+                    </div><!-- .tyn-chat-cover -->
+                    <div class="tyn-media-group tyn-media-vr tyn-media-center mt-n4 pb-4">
+                        <div class="tyn-media tyn-size-xl tyn-circle border border-2 border-white">
+                            <img src="images/avatar/1.jpg" alt="">
+                        </div><!-- .tyn-media -->
+                        <div class="tyn-media-col">
+                            <div class="tyn-media-row has-dot-sap">
+                                <span class="meta">Calling ...</span>
+                            </div>
+                            <div class="tyn-media-row">
+                                <h6 class="name">Konstantin Frank</h6>
+                            </div>
+                        </div><!-- .tyn-media-col -->
+                    </div><!-- .tyn-media-group -->
+                    <ul class="tyn-list-inline gap gap-3 m-auto py-4">
+                        <li>
+                            <button class="btn btn-light" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#videoCallingScreen">
+                                <span>Switch To</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2z" />
+                                </svg><!-- camera-video-fill -->
+                            </button>
+                        </li>
+                    </ul><!-- .tyn-list-inline -->
+                    <ul class="tyn-list-inline gap gap-3 mx-auto py-4">
+                        <li>
+                            <button class="btn btn-icon btn-pill btn-light">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                                    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5" />
+                                </svg><!-- person-plus-fill -->
+                            </button>
+                        </li><!-- li -->
+                        <li>
+                            <button class="btn btn-icon btn-pill btn-light">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mic-mute-fill" viewBox="0 0 16 16">
+                                    <path d="M13 8c0 .564-.094 1.107-.266 1.613l-.814-.814A4 4 0 0 0 12 8V7a.5.5 0 0 1 1 0zm-5 4c.818 0 1.578-.245 2.212-.667l.718.719a5 5 0 0 1-2.43.923V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 1 0v1a4 4 0 0 0 4 4m3-9v4.879L5.158 2.037A3.001 3.001 0 0 1 11 3" />
+                                    <path d="M9.486 10.607 5 6.12V8a3 3 0 0 0 4.486 2.607m-7.84-9.253 12 12 .708-.708-12-12z" />
+                                </svg><!-- mic-mute-fill -->
+                            </button>
+                        </li><!-- li -->
+                        <li>
+                            <button class="btn btn-icon btn-pill btn-danger" data-bs-dismiss="modal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-x-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zm9.261 1.135a.5.5 0 0 1 .708 0L13 2.793l1.146-1.147a.5.5 0 0 1 .708.708L13.707 3.5l1.147 1.146a.5.5 0 0 1-.708.708L13 4.207l-1.146 1.147a.5.5 0 0 1-.708-.708L12.293 3.5l-1.147-1.146a.5.5 0 0 1 0-.708" />
+                                </svg><!-- telephone-x-fill -->
+                            </button>
+                        </li><!-- li -->
+                    </ul><!-- .tyn-list-inline -->
+                </div><!-- .tyn-chat-call -->
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div><!-- .modal -->
+    <div class="modal fade" tabindex="-1" id="videoCallingScreen" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content border-0">
+                <div class="tyn-chat-call tyn-chat-call-video">
+                    <div class="tyn-chat-call-stack">
+                        <div class="tyn-chat-call-cover">
+                            <img src="images/v-cover/1.jpg" alt="">
+                        </div>
+                    </div><!-- .tyn-chat-call-stack -->
+                    <div class="tyn-chat-call-stack on-dark">
+                        <div class="tyn-media-group p-4">
+                            <div class="tyn-media-col align-self-start pt-3">
+                                <div class="tyn-media-row has-dot-sap">
+                                    <span class="meta">Talking With ...</span>
+                                </div>
+                                <div class="tyn-media-row">
+                                    <h6 class="name">Konstantin Frank</h6>
+                                </div>
+                                <div class="tyn-media-row has-dot-sap">
+                                    <span class="content">02:09 min</span>
+                                </div>
+                            </div><!-- .tyn-media-col -->
+                            <div class="tyn-media tyn-media-1x1_3 tyn-size-3xl border border-2 border-dark">
+                                <img src="images/v-cover/2.jpg" alt="">
+                            </div><!-- .tyn-media -->
+                        </div><!-- .tyn-media-group -->
+                        <ul class="tyn-list-inline gap gap-3 mx-auto py-4 justify-content-center  mt-auto">
+                            <li>
+                                <button class="btn btn-icon btn-pill btn-light">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5" />
+                                    </svg><!-- person-plus-fill -->
+                                </button>
+                            </li><!-- li -->
+                            <li>
+                                <button class="btn btn-icon btn-pill btn-light" data-bs-toggle="modal" data-bs-target="#callingScreen">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2z" />
+                                    </svg><!-- camera-video-fill -->
+                                </button>
+                            </li><!-- li -->
+                            <li>
+                                <button class="btn btn-icon btn-pill btn-light">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mic-mute-fill" viewBox="0 0 16 16">
+                                        <path d="M13 8c0 .564-.094 1.107-.266 1.613l-.814-.814A4 4 0 0 0 12 8V7a.5.5 0 0 1 1 0zm-5 4c.818 0 1.578-.245 2.212-.667l.718.719a5 5 0 0 1-2.43.923V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 1 0v1a4 4 0 0 0 4 4m3-9v4.879L5.158 2.037A3.001 3.001 0 0 1 11 3" />
+                                        <path d="M9.486 10.607 5 6.12V8a3 3 0 0 0 4.486 2.607m-7.84-9.253 12 12 .708-.708-12-12z" />
+                                    </svg><!-- mic-mute-fill -->
+                                </button>
+                            </li><!-- li -->
+                            <li>
+                                <button class="btn btn-icon btn-pill btn-danger" data-bs-dismiss="modal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-x-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zm9.261 1.135a.5.5 0 0 1 .708 0L13 2.793l1.146-1.147a.5.5 0 0 1 .708.708L13.707 3.5l1.147 1.146a.5.5 0 0 1-.708.708L13 4.207l-1.146 1.147a.5.5 0 0 1-.708-.708L12.293 3.5l-1.147-1.146a.5.5 0 0 1 0-.708" />
+                                    </svg><!-- telephone-x-fill -->
+                                </button>
+                            </li><!-- li -->
+                        </ul><!-- .tyn-list-inline -->
+                    </div><!-- .tyn-chat-call-stack -->
+                </div><!-- .tyn-chat-call -->
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div><!-- .modal -->
+    <div class="modal fade" tabindex="-1" id="addContact">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content border-0">
+                <div class="modal-body p-4">
+                    <h4 class="pb-2">Search by UserName</h4>
+                    <div class="form-group">
+                        <div class="form-control-wrap">
+                            <div class="form-control-icon start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg><!-- search -->
+                            </div>
+                            <input type="text" class="form-control form-control-solid" id="search-username" placeholder="Enter username">
+                        </div>
+                    </div><!-- .form-group -->
+                    <ul class="tyn-media-list gap gap-3 pt-4">
+                        <li>
+                            <div class="tyn-media-group">
+                                <div class="tyn-media">
+                                    <img src="images/avatar/1.jpg" alt="">
+                                </div><!-- .tyn-media -->
+                                <div class="tyn-media-col">
+                                    <div class="tyn-media-row">
+                                        <h6 class="name">Jasmine Thompson</h6>
+                                    </div>
+                                    <div class="tyn-media-row">
+                                        <p class="content">@thompson_jasmine</p>
+                                    </div>
+                                </div><!-- .tyn-media-col -->
+                                <ul class="tyn-media-option-list me-n1">
+                                    <li class="dropdown">
+                                        <button class="btn btn-icon btn-white btn-pill">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                                                <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                                <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5" />
+                                            </svg><!-- person-plus-fill -->
+                                        </button>
+                                    </li>
+                                </ul><!-- .tyn-media-option-list -->
+                            </div><!-- .tyn-media-group -->
+                        </li><!-- li -->
+                        <li>
+                            <div class="tyn-media-group">
+                                <div class="tyn-media">
+                                    <img src="images/avatar/2.jpg" alt="">
+                                </div><!-- .tyn-media -->
+                                <div class="tyn-media-col">
+                                    <div class="tyn-media-row">
+                                        <h6 class="name">Konstantin Frank</h6>
+                                    </div>
+                                    <div class="tyn-media-row">
+                                        <p class="content">@konstantin_frank</p>
+                                    </div>
+                                </div><!-- .tyn-media-col -->
+                                <ul class="tyn-media-option-list me-n1">
+                                    <li class="dropdown">
+                                        <button class="btn btn-icon btn-white btn-pill">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                                                <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                                <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5" />
+                                            </svg><!-- person-plus-fill -->
+                                        </button>
+                                    </li>
+                                </ul><!-- .tyn-media-option-list -->
+                            </div><!-- .tyn-media-group -->
+                        </li><!-- li -->
+                        <li>
+                            <div class="tyn-media-group">
+                                <div class="tyn-media">
+                                    <img src="images/avatar/3.jpg" alt="">
+                                </div><!-- .tyn-media -->
+                                <div class="tyn-media-col">
+                                    <div class="tyn-media-row">
+                                        <h6 class="name">Mathias Devos</h6>
+                                    </div>
+                                    <div class="tyn-media-row">
+                                        <p class="content">@mathias_devos</p>
+                                    </div>
+                                </div><!-- .tyn-media-col -->
+                                <ul class="tyn-media-option-list me-n1">
+                                    <li class="dropdown">
+                                        <button class="btn btn-icon btn-white btn-pill">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                                                <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                                <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5" />
+                                            </svg><!-- person-plus-fill -->
+                                        </button>
+                                    </li>
+                                </ul><!-- .tyn-media-option-list -->
+                            </div><!-- .tyn-media-group -->
+                        </li><!-- li -->
+                        <li>
+                            <div class="tyn-media-group">
+                                <div class="tyn-media">
+                                    <img src="images/avatar/4.jpg" alt="">
+                                </div><!-- .tyn-media -->
+                                <div class="tyn-media-col">
+                                    <div class="tyn-media-row">
+                                        <h6 class="name">Marie George</h6>
+                                    </div>
+                                    <div class="tyn-media-row">
+                                        <p class="content">@marie_george</p>
+                                    </div>
+                                </div><!-- .tyn-media-col -->
+                                <ul class="tyn-media-option-list me-n1">
+                                    <li class="dropdown">
+                                        <button class="btn btn-icon btn-white btn-pill">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                                                <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                                <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5" />
+                                            </svg><!-- person-plus-fill -->
+                                        </button>
+                                    </li>
+                                </ul><!-- .tyn-media-option-list -->
+                            </div><!-- .tyn-media-group -->
+                        </li><!-- li -->
+                        <li>
+                            <div class="tyn-media-group">
+                                <div class="tyn-media">
+                                    <img src="images/avatar/5.jpg" alt="">
+                                </div><!-- .tyn-media -->
+                                <div class="tyn-media-col">
+                                    <div class="tyn-media-row">
+                                        <h6 class="name">Phillip Burke</h6>
+                                    </div>
+                                    <div class="tyn-media-row">
+                                        <p class="content">@phillip_burke</p>
+                                    </div>
+                                </div><!-- .tyn-media-col -->
+                                <ul class="tyn-media-option-list me-n1">
+                                    <li class="dropdown">
+                                        <button class="btn btn-icon btn-white btn-pill">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                                                <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                                <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5" />
+                                            </svg><!-- person-plus-fill -->
+                                        </button>
+                                    </li>
+                                </ul><!-- .tyn-media-option-list -->
+                            </div><!-- .tyn-media-group -->
+                        </li><!-- li -->
+                    </ul><!-- .tyn-media-list -->
+                </div><!-- .modal-body -->
+                <button class="btn btn-md btn-icon btn-pill btn-white shadow position-absolute top-0 end-0 mt-n3 me-n3" data-bs-dismiss="modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg><!-- x-lg -->
+                </button><!-- modal-close -->
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div><!-- .modal -->
     <!-- Page Scripts -->
     <script src="assets/js/bundle0ae1.js?v1310"></script>
     <script src="assets/js/app0ae1.js?v1310"></script>
 </body>
 
 
-<!-- Mirrored from connectme-html.themeyn.com/ui-elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Oct 2024 19:34:30 GMT -->
+<!-- Mirrored from connectme-html.themeyn.com/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Oct 2024 19:34:30 GMT -->
 </html>

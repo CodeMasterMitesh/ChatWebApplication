@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="">
-
-
-<!-- Mirrored from connectme-html.themeyn.com/chat-bot-new.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Oct 2024 19:34:31 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <!-- Page Title -->
-    <title>ChatBot | ConnectMe | Chat Application HTML Template</title>
-    <!-- Page Stylesheets -->
-    <link rel="stylesheet" href="assets/css/bundle0ae1.css?v1310">
-    <link rel="stylesheet" href="assets/css/app0ae1.css?v1310">
-</head>
+<?php include("partition/header.php"); ?>
 
 <body class="tyn-body">
     <div class="tyn-root">
@@ -428,7 +412,67 @@
                                     </svg><!-- chat-right-text-fill -->
                                 </div>
                                 <div class="tyn-media-col">
-                                    <div class="content">new chat</div>
+                                    <div class="content">what can you do for me ?</div>
+                                </div>
+                            </div><!-- .tyn-media-group -->
+                        </li><!-- .tyn-aside-item -->
+                        <li class="tyn-aside-item js-toggle-main">
+                            <div class="tyn-media-group">
+                                <div class="tyn-media tyn-size-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-text-fill" viewBox="0 0 16 16">
+                                        <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1m0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1m0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1" />
+                                    </svg><!-- chat-right-text-fill -->
+                                </div>
+                                <div class="tyn-media-col">
+                                    <div class="content">write me short joke for web development tutorial starting.</div>
+                                </div>
+                            </div><!-- .tyn-media-group -->
+                        </li><!-- .tyn-aside-item -->
+                        <li class="tyn-aside-item js-toggle-main">
+                            <div class="tyn-media-group">
+                                <div class="tyn-media tyn-size-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-text-fill" viewBox="0 0 16 16">
+                                        <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1m0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1m0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1" />
+                                    </svg><!-- chat-right-text-fill -->
+                                </div>
+                                <div class="tyn-media-col">
+                                    <div class="content">top 10 most used css triks.</div>
+                                </div>
+                            </div><!-- .tyn-media-group -->
+                        </li><!-- .tyn-aside-item -->
+                        <li class="tyn-aside-item js-toggle-main">
+                            <div class="tyn-media-group">
+                                <div class="tyn-media tyn-size-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-text-fill" viewBox="0 0 16 16">
+                                        <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1m0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1m0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1" />
+                                    </svg><!-- chat-right-text-fill -->
+                                </div>
+                                <div class="tyn-media-col">
+                                    <div class="content">easy way to join faang</div>
+                                </div>
+                            </div><!-- .tyn-media-group -->
+                        </li><!-- .tyn-aside-item -->
+                        <li class="tyn-aside-item js-toggle-main">
+                            <div class="tyn-media-group">
+                                <div class="tyn-media tyn-size-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-text-fill" viewBox="0 0 16 16">
+                                        <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1m0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1m0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1" />
+                                    </svg><!-- chat-right-text-fill -->
+                                </div>
+                                <div class="tyn-media-col">
+                                    <div class="content">how to learn fornty end web development</div>
+                                </div>
+                            </div><!-- .tyn-media-group -->
+                        </li><!-- .tyn-aside-item -->
+                        <li class="tyn-aside-item js-toggle-main">
+                            <div class="tyn-media-group">
+                                <div class="tyn-media tyn-size-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-text-fill" viewBox="0 0 16 16">
+                                        <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1m0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1m0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1" />
+                                    </svg><!-- chat-right-text-fill -->
+                                </div>
+                                <div class="tyn-media-col">
+                                    <div class="content">Could you write a basic chapter 1 tutorial for JavaScript for me ?</div>
                                 </div>
                             </div><!-- .tyn-media-group -->
                         </li><!-- .tyn-aside-item -->
@@ -445,7 +489,7 @@
                                     </svg><!-- person-up -->
                                     <span class="small text-nowrap mt-n1">Become Pro</span>
                                 </a>
-                            </li><!-- li -->
+                            </li><!-- .col -->
                             <li class="col-6">
                                 <button class="btn btn-light tyn-size-lg w-100 flex-column py-2 pt-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
@@ -454,12 +498,12 @@
                                     </svg><!-- trash -->
                                     <span class="small text-nowrap mt-n1">Clear Archive</span>
                                 </button>
-                            </li><!-- li -->
-                        </ul><!-- ul -->
+                            </li><!-- .col -->
+                        </ul><!-- .row -->
                     </div><!-- w-100 -->
                 </div><!-- .tyn-aside-foot -->
             </div><!-- .tyn-aside -->
-            <div class="tyn-main tyn-main-boxed tyn-main-boxed-lg main-shown" id="tynMain">
+            <div class="tyn-main tyn-main-boxed tyn-main-boxed-lg" id="tynMain">
                 <ul class="tyn-list-inline d-md-none translate-middle-x position-absolute start-50 z-1">
                     <li>
                         <button class="btn btn-icon btn-pill btn-white js-toggle-main">
@@ -469,7 +513,196 @@
                         </button>
                     </li>
                 </ul><!-- .tyn-list-inline -->
-                <div class="tyn-chat-body m-4 rounded-3" id="tynBotBody">
+                <div class="tyn-chat-body m-4 rounded-3 js-scroll-to-end" id="tynBotBody">
+                    <div class="tyn-qa" id="tynBotReply">
+                        <div class="tyn-qa-item">
+                            <div class="tyn-qa-avatar">
+                                <div class="tyn-media tyn-size-md">
+                                    <img src="images/avatar/1.jpg" alt="">
+                                </div><!-- .tyn-media -->
+                            </div><!-- .tyn-qa-avatar -->
+                            <div class="tyn-qa-message tyn-text-block"> what can you do for me ? </div><!-- .tyn-qa-message -->
+                        </div><!-- .tyn-qa-item -->
+                        <div class="tyn-qa-item">
+                            <div class="tyn-qa-avatar">
+                                <div class="tyn-qa-avatar-wrap">
+                                    <div class="tyn-media tyn-size-md">
+                                        <img src="images/avatar/bot-1.jpg" alt="">
+                                    </div><!-- .tyn-media -->
+                                </div><!-- .tyn-qa-avatar-wrap -->
+                            </div><!-- .tyn-qa-avatar -->
+                            <div class="tyn-qa-message tyn-text-block">
+                                <p>As an AI language model, I can help you in a variety of ways. Here are some examples:</p>
+                                <ol>
+                                    <li>Answer questions: I can answer your questions about a wide range of topics, including science, history, geography, math, and more.</li>
+                                    <li>Provide information: I can provide you with information on a particular topic, such as the definition of a word, the history of an event, or the current status of a situation.</li>
+                                    <li>Generate text: I can generate text for you, such as an essay, a report, or a summary of a particular topic.</li>
+                                    <li>Help with language: If English is not your first language, I can help you improve your writing or speaking skills by suggesting ways to improve your grammar, syntax, and vocabulary.</li>
+                                    <li>Assist with research: If you're working on a research project, I can help you find relevant information and sources to support your work.</li>
+                                    <li>Engage in conversation: I can engage in conversation with you on a variety of topics and help you explore different ideas and perspectives.</li>
+                                </ol>
+                                <p>Overall, my goal is to assist you in any way that I can using my knowledge and abilities as an AI language model.</p>
+                            </div><!-- .tyn-qa-message -->
+                        </div><!-- .tyn-qa-item -->
+                        <div class="tyn-qa-item">
+                            <div class="tyn-qa-avatar">
+                                <div class="tyn-media tyn-size-md">
+                                    <img src="images/avatar/1.jpg" alt="">
+                                </div><!-- .tyn-media -->
+                            </div><!-- .tyn-qa-avatar -->
+                            <div class="tyn-qa-message tyn-text-block"> ok, write me short joke for web development tutorial starting. </div><!-- .tyn-qa-message -->
+                        </div><!-- .tyn-qa-item -->
+                        <div class="tyn-qa-item">
+                            <div class="tyn-qa-avatar">
+                                <div class="tyn-qa-avatar-wrap">
+                                    <div class="tyn-media tyn-size-md">
+                                        <img src="images/avatar/bot-1.jpg" alt="">
+                                    </div><!-- .tyn-media -->
+                                </div><!-- .tyn-qa-avatar-wrap -->
+                            </div><!-- .tyn-qa-avatar -->
+                            <div class="tyn-qa-message tyn-text-block">
+                                <p>Sure, here's a short joke for a web development tutorial starting:</p>
+                                <p>Why was the web developer always cold? <br> Because he left his Windows open!</p>
+                            </div><!-- .tyn-qa-message -->
+                        </div><!-- .tyn-qa-item -->
+                        <div class="tyn-qa-item">
+                            <div class="tyn-qa-avatar">
+                                <div class="tyn-media tyn-size-md">
+                                    <img src="images/avatar/1.jpg" alt="">
+                                </div><!-- .tyn-media -->
+                            </div><!-- .tyn-qa-avatar -->
+                            <div class="tyn-qa-message tyn-text-block"> Could you write a basic chapter 1 tutorial for JavaScript for me ? </div><!-- .tyn-qa-message -->
+                        </div><!-- .tyn-qa-item -->
+                        <div class="tyn-qa-item">
+                            <div class="tyn-qa-avatar">
+                                <div class="tyn-qa-avatar-wrap">
+                                    <div class="tyn-media tyn-size-md">
+                                        <img src="images/avatar/bot-1.jpg" alt="">
+                                    </div><!-- .tyn-media -->
+                                </div><!-- .tyn-qa-avatar-wrap -->
+                            </div><!-- .tyn-qa-avatar -->
+                            <div class="tyn-qa-message tyn-text-block">
+                                <p>Chapter 1: Getting Started with JavaScript and CSS</p>
+                                <p>JavaScript and CSS are two essential technologies for building modern web applications. In this chapter, we will cover the basics of JavaScript and CSS, including data types, variables, and control structures, as well as an example of how to use JavaScript and CSS together.</p>
+                                <p>1.1 Data Types</p>
+                                <p>JavaScript supports several data types, including numbers, strings, booleans, null, and undefined. Here are some examples:</p>
+                                <ul>
+                                    <li>Numbers: 42, 3.14, -7</li>
+                                    <li>Strings: "hello", 'world', "123"</li>
+                                    <li>Booleans: true, false</li>
+                                    <li>Null: null</li>
+                                    <li>Undefined: undefined</li>
+                                </ul>
+                                <p>To declare a variable in JavaScript, you can use the "var" keyword, followed by the variable name and an optional initial value. Here's an example:</p>
+                                <div class="tyn-code-block">
+                                    <h6 class="tyn-code-block-title tyn-overline">Javascript</h6>
+                                    <button data-clipboard-target="#js-tuts-01" class="tyn-copy">Copy</button>
+                                    <pre><code class="language-js" id="js-tuts-01">var myNumber = 42;
+var myString = "hello";
+var myBoolean = true;
+var myNull = null;
+var myUndefined = undefined;
+</code></pre>
+                                </div>
+                                <p>1.2 Operators</p>
+                                <p>JavaScript supports several operators for performing arithmetic, comparison, and logical operations. Here are some examples:</p>
+                                <ul>
+                                    <li>Arithmetic operators: +, -, *, /, %</li>
+                                    <li>Comparison operators: ==, !=, ===, !==, <,>, <=,>=</li>
+                                    <li>Logical operators: &&, ||, !</li>
+                                </ul>
+                                <div class="tyn-code-block">
+                                    <h6 class="tyn-code-block-title tyn-overline">Javascript</h6>
+                                    <button data-clipboard-target="#js-tuts-02" class="tyn-copy">Copy</button>
+                                    <pre><code class="language-js" id="js-tuts-02">var x = 10;
+var y = 5;
+var z = x + y; // 15
+var a = x > y; // true
+var b = x == y; // false
+var c = !b; // true
+</code></pre>
+                                </div>
+                                <p>1.3 Control Structures</p>
+                                <p>JavaScript supports several control structures for controlling the flow of your program. These include if/else statements, loops, and switch statements. Here are some examples:</p>
+                                <ul>
+                                    <li>If/else statements:</li>
+                                </ul>
+                                <div class="tyn-code-block">
+                                    <h6 class="tyn-code-block-title tyn-overline">Javascript</h6>
+                                    <button data-clipboard-target="#js-tuts-03" class="tyn-copy">Copy</button>
+                                    <pre><code class="language-js" id="js-tuts-03">var age = 18;
+if (age >= 18) {
+  console.log("You are an adult.");
+} else {
+  console.log("You are a minor.");
+}
+</code></pre>
+                                </div>
+                                <ul>
+                                    <li>Loops:</li>
+                                </ul>
+                                <div class="tyn-code-block">
+                                    <h6 class="tyn-code-block-title tyn-overline">Javascript</h6>
+                                    <button data-clipboard-target="#js-tuts-04" class="tyn-copy">Copy</button>
+                                    <pre><code class="language-js" id="js-tuts-04">for (var i = 0; i < 10; i++) {
+  console.log(i);
+}
+</code></pre>
+                                </div>
+                                <ul>
+                                    <li>Switch statements:</li>
+                                </ul>
+                                <div class="tyn-code-block">
+                                    <h6 class="tyn-code-block-title tyn-overline">Javascript</h6>
+                                    <button data-clipboard-target="#js-tuts-05" class="tyn-copy">Copy</button>
+                                    <pre><code class="language-js" id="js-tuts-05">var fruit = "banana";
+switch (fruit) {
+  case "apple":
+    console.log("This is an apple.");
+    break;
+  case "banana":
+    console.log("This is a banana.");
+    break;
+  default:
+    console.log("I don't know what fruit this is.");
+}
+</code></pre>
+                                </div>
+                                <p>1.4 Example: Changing CSS with JavaScript</p>
+                                <p>One useful application of JavaScript is to dynamically modify the CSS of a webpage. Here's an example of how to use JavaScript to change the color of a paragraph element when a button is clicked:</p>
+                                <div class="tyn-code-block">
+                                    <h6 class="tyn-code-block-title tyn-overline">HTML</h6>
+                                    <button data-clipboard-target="#js-tuts-06" class="tyn-copy">Copy</button>
+                                    <pre><code class="language-html" id="js-tuts-06">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;style&gt;
+    p {
+      color: blue;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;p id=&quot;myParagraph&quot;&gt;This is a paragraph.&lt;/p&gt;
+  
+  &lt;button onclick=&quot;changeColor()&quot;&gt;Change Color&lt;/button&gt;
+
+  &lt;script&gt;
+    function changeColor() {
+      var paragraph = document.getElementById(&quot;myParagraph&quot;);
+      paragraph.style.color = &quot;red&quot;;
+    }
+  &lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                                </div>
+                                <p>In this example, we use JavaScript to find the paragraph element with the ID "myParagraph" and change its color to red when the button is clicked. We do this by setting the "color" property of the paragraph's style object.</p>
+                                <p>In this chapter, we covered the basics of JavaScript and CSS, including data types, variables, operators, and control structures, as well as an example of how to use JavaScript and CSS</p>
+                            </div><!-- .tyn-qa-message -->
+                        </div><!-- .tyn-qa-item -->
+                    </div><!-- .tyn-qa -->
                 </div><!-- .tyn-chat-body -->
                 <div class="tyn-chat-form border-0 ps-3 pe-4 py-3 bg-white mb-4 mx-4 rounded-3">
                     <div class="tyn-chat-form-enter">
@@ -480,7 +713,7 @@
                                         <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z" />
                                     </svg><!-- send-fill -->
                                 </button></li>
-                        </ul><!-- .tyn-list-inline -->
+                        </ul>
                     </div><!-- .tyn-chat-form-enter -->
                 </div><!-- .tyn-chat-form -->
             </div><!-- .tyn-main -->
@@ -492,5 +725,5 @@
 </body>
 
 
-<!-- Mirrored from connectme-html.themeyn.com/chat-bot-new.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Oct 2024 19:34:31 GMT -->
+<!-- Mirrored from connectme-html.themeyn.com/chat-bot.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Oct 2024 19:34:28 GMT -->
 </html>

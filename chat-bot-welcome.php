@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="">
-
-
-<!-- Mirrored from connectme-html.themeyn.com/chat-bot-s2-new.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Oct 2024 19:34:31 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <!-- Page Title -->
-    <title>ChatBot | ConnectMe | Chat Application HTML Template</title>
-    <!-- Page Stylesheets -->
-    <link rel="stylesheet" href="assets/css/bundle0ae1.css?v1310">
-    <link rel="stylesheet" href="assets/css/app0ae1.css?v1310">
-</head>
+<?php include("partition/header.php"); ?>
 
 <body class="tyn-body">
     <div class="tyn-root">
@@ -401,108 +385,221 @@
                 </div><!-- .tyn-appbar-content -->
             </div><!-- .tyn-appbar-wrap -->
         </nav><!-- .tyn-appbar -->
-        <div class="tyn-content tyn-content-full-height tyn-chatbot tyn-chatbot-page has-aside-base">
-            <div class="tyn-aside tyn-aside-base">
-                <div class="tyn-aside-head">
-                    <div class="tyn-aside-head-text">
-                        <h3 class="tyn-aside-title tyn-title">Chat Archive</h3>
-                        <span class="tyn-subtext">200+ Conversations </span>
-                    </div><!-- .tyn-aside-head-text -->
-                    <div class="tyn-aside-head-tools">
-                        <ul class="tyn-list-inline gap gap-3">
-                            <li><a class="btn btn-icon btn-light btn-md btn-pill" href="chat-bot-welcome.html">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
-                                    </svg><!-- plus-lg -->
-                                </a></li>
-                        </ul>
-                    </div><!-- .tyn-aside-head-tools -->
-                </div><!-- .tyn-aside-head -->
-                <div class="tyn-aside-body" data-simplebar>
-                    <ul class="tyn-aside-list">
-                        <li class="tyn-aside-item tyn-aside-item-bubbly  js-toggle-main active">
-                            <div class="tyn-media-group">
-                                <div class="tyn-media tyn-size-sm">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-quote-fill" viewBox="0 0 16 16">
-                                        <path d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M7.194 6.766a1.7 1.7 0 0 0-.227-.272 1.5 1.5 0 0 0-.469-.324l-.008-.004A1.8 1.8 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.5 2.5 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.5 2.5 0 0 0-.228-.4 1.7 1.7 0 0 0-.227-.273 1.5 1.5 0 0 0-.469-.324l-.008-.004A1.8 1.8 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z" />
-                                    </svg><!-- chat-quote-fill -->
-                                </div><!-- .tyn-media -->
-                                <div class="tyn-media-col">
-                                    <div class="content">new chat</div>
-                                </div><!-- .tyn-media-col -->
-                                <div class="tyn-media-option">
-                                    <ul class="tyn-media-option-list">
-                                        <li>
-                                            <button class="btn btn-icon btn-md btn-pill btn-light">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
-                                                    <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
-                                                </svg><!-- trash -->
-                                            </button>
-                                        </li>
-                                    </ul>
-                                </div><!-- .tyn-media-option -->
-                            </div><!-- .tyn-media-group -->
-                        </li><!-- .tyn-aside-item -->
-                    </ul><!-- .tyn-aside-list -->
-                </div><!-- .tyn-aside-body -->
-                <div class="tyn-aside-foot">
-                    <div class="w-100">
-                        <ul class="row gx-3">
-                            <li class="col-6">
-                                <a href="pricing.html" class="btn btn-light tyn-size-lg w-100 flex-column py-2 pt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-up" viewBox="0 0 16 16">
-                                        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.854 1.5 1.5a.5.5 0 0 1-.708.708L13 11.707V14.5a.5.5 0 0 1-1 0v-2.793l-.646.647a.5.5 0 0 1-.708-.708l1.5-1.5a.5.5 0 0 1 .708 0M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
-                                        <path d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z" />
-                                    </svg><!-- person-up -->
-                                    <span class="small text-nowrap mt-n1">Become Pro</span>
+        <div class="tyn-content tyn-content-page">
+            <div class="tyn-main">
+                <div class="tyn-section">
+                    <div class="container">
+                        <div class="tyn-text-block text-center pb-4 pb-lg-5">
+                            <a class="tyn-logo" href="index.html">
+                                <svg viewBox="0 0 43 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M37.2654 14.793C37.2654 14.793 45.0771 20.3653 41.9525 29.5311C41.9525 29.5311 41.3796 31.1976 39.0361 34.4264L42.4732 37.9677C42.4732 37.9677 43.3065 39.478 41.5879 39.9987H24.9229C24.9229 39.9987 19.611 40.155 14.8198 36.9782C14.8198 36.9782 12.1638 35.2076 9.76825 31.9787L18.6215 32.0308C18.6215 32.0308 24.298 31.9787 29.7662 28.3333C35.2344 24.6878 37.4217 18.6988 37.2654 14.793Z" fill="#60A5FA" />
+                                    <path d="M34.5053 12.814C32.2659 1.04441 19.3506 0.0549276 19.3506 0.0549276C8.31004 -0.674164 3.31055 6.09597 3.31055 6.09597C-4.24076 15.2617 3.6751 23.6983 3.6751 23.6983C3.6751 23.6983 2.99808 24.6357 0.862884 26.5105C-1.27231 28.3854 1.22743 29.3748 1.22743 29.3748H17.3404C23.4543 28.7499 25.9124 27.3959 25.9124 27.3959C36.328 22.0318 34.5053 12.814 34.5053 12.814ZM19.9963 18.7301H9.16412C8.41419 18.7301 7.81009 18.126 7.81009 17.3761C7.81009 16.6261 8.41419 16.022 9.16412 16.022H19.9963C20.7463 16.022 21.3504 16.6261 21.3504 17.3761C21.3504 18.126 20.7358 18.7301 19.9963 18.7301ZM25.3708 13.314H9.12245C8.37253 13.314 7.76843 12.7099 7.76843 11.96C7.76843 11.21 8.37253 10.6059 9.12245 10.6059H25.3708C26.1207 10.6059 26.7248 11.21 26.7248 11.96C26.7248 12.7099 26.1103 13.314 25.3708 13.314Z" fill="#2563EB" />
+                                </svg>
+                            </a>
+                            <h1 class="mt-3">Welcome Back to ConnectBot</h1>
+                            <p>Your AI-powered knowledge Bot.</p>
+                        </div><!-- .tyn-text-block -->
+                        <div class="row g-3 justify-content-center text-center">
+                            <div class="col-xl-3 col-lg-4">
+                                <h4 class="title mb-3">Try it</h4>
+                                <div class="row g-3 justify-content-center">
+                                    <div class="col-sm-6 col-md-5 col-lg-12">
+                                        <div class="card h-100 border-0">
+                                            <div class="card-body">
+                                                <div class="tyn-text-block">
+                                                    <p>Can you provide a customized experience</p>
+                                                </div>
+                                            </div>
+                                        </div><!-- .card -->
+                                    </div><!-- .col -->
+                                    <div class="col-sm-6 col-md-5 col-lg-12">
+                                        <div class="card h-100 border-0">
+                                            <div class="card-body">
+                                                <div class="tyn-text-block">
+                                                    <p>Can i become a super hero, by mosquito bite.</p>
+                                                </div>
+                                            </div>
+                                        </div><!-- .card -->
+                                    </div><!-- .col -->
+                                </div><!-- .row -->
+                            </div><!-- .col -->
+                            <div class="col-xl-3 col-lg-4">
+                                <h4 class="title mb-3">What can do?</h4>
+                                <div class="row g-3 justify-content-center">
+                                    <div class="col-sm-6 col-md-5 col-lg-12">
+                                        <div class="card h-100 border-0">
+                                            <div class="card-body">
+                                                <div class="tyn-text-block">
+                                                    <p>Simulate conversation with human users.</p>
+                                                </div>
+                                            </div>
+                                        </div><!-- .card -->
+                                    </div><!-- .col -->
+                                    <div class="col-sm-6 col-md-5 col-lg-12">
+                                        <div class="card h-100 border-0">
+                                            <div class="card-body">
+                                                <div class="tyn-text-block">
+                                                    <p>Can provide 24/7 best customer support in the world.</p>
+                                                </div>
+                                            </div>
+                                        </div><!-- .card -->
+                                    </div><!-- .col -->
+                                </div><!-- .row -->
+                            </div><!-- .col -->
+                            <div class="col-xl-3 col-lg-4">
+                                <h4 class="title mb-3">What can't do?</h4>
+                                <div class="row g-3 justify-content-center">
+                                    <div class="col-sm-6 col-md-5 col-lg-12">
+                                        <div class="card h-100 border-0">
+                                            <div class="card-body">
+                                                <div class="tyn-text-block">
+                                                    <p>My knowledge and abilities are limited by internet.</p>
+                                                </div>
+                                            </div>
+                                        </div><!-- .card -->
+                                    </div><!-- .col -->
+                                    <div class="col-sm-6 col-md-5 col-lg-12">
+                                        <div class="card h-100 border-0">
+                                            <div class="card-body">
+                                                <div class="tyn-text-block">
+                                                    <p>My ability to communicate is limited to language.</p>
+                                                </div>
+                                            </div>
+                                        </div><!-- .card -->
+                                    </div><!-- .col -->
+                                </div><!-- .row -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                        <div class="text-center mt-4">
+                            <p>Choose a conversation style</p>
+                            <div class="row justify-content-center">
+                                <div class="col-xl-5">
+                                    <ul class="d-inline-flex flex-wrap bg-white p-2 rounded-3 justify-content-center gap gap-2">
+                                        <li class="flex-grow-1">
+                                            <input type="radio" class="btn-check" name="convotype" id="creative" autocomplete="off" checked>
+                                            <label class="btn btn-light flex-column w-100" for="creative"><span class="w-100 small mb-n3 pb-1">More</span>Creative</label>
+                                        </li><!-- li -->
+                                        <li class="flex-grow-1">
+                                            <input type="radio" class="btn-check" name="convotype" id="balanced" autocomplete="off">
+                                            <label class="btn btn-light flex-column w-100" for="balanced"><span class="w-100 small mb-n3 pb-1">More</span>Balanced</label>
+                                        </li><!-- li -->
+                                        <li class="flex-grow-1">
+                                            <input type="radio" class="btn-check" name="convotype" id="precise" autocomplete="off">
+                                            <label class="btn btn-light flex-column w-100" for="precise"><span class="w-100 small mb-n3 pb-1">More</span>Precise</label>
+                                        </li><!-- li -->
+                                    </ul><!-- ul -->
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+                            <div class="mt-4">
+                                <a class="btn btn-primary btn-rg btn-pill" href="chat-bot-s2-new.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+                                        <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z" />
+                                    </svg><!-- send-fill -->
+                                    <span>Start Talking</span>
                                 </a>
-                            </li><!-- .col -->
-                            <li class="col-6">
-                                <button class="btn btn-light tyn-size-lg w-100 flex-column py-2 pt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
-                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
-                                    </svg><!-- trash -->
-                                    <span class="small text-nowrap mt-n1">Clear Archive</span>
-                                </button>
-                            </li><!-- .col -->
-                        </ul><!-- .row -->
-                    </div><!-- w-100 -->
-                </div><!-- .tyn-aside-foot -->
-            </div><!-- .tyn-aside -->
-            <div class="tyn-main main-shown" id="tynMain">
-                <ul class="tyn-list-inline d-md-none translate-middle-x position-absolute start-50 z-1">
-                    <li>
-                        <button class="btn btn-icon btn-pill btn-white js-toggle-main">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                            </svg><!-- x-lg -->
-                        </button>
-                    </li>
-                </ul><!-- .tyn-list-inline -->
-                <div class="tyn-chat-body my-4 px-4" id="tynBotBody">
-                    <div class="container px-0">
+                            </div>
+                        </div><!-- .text-center -->
                     </div><!-- .container -->
-                </div><!-- .tyn-chat-body -->
-                <div class="tyn-chat-form border-0 px-4">
-                    <div class="container px-0">
-                        <div class="ps-3 pe-4 py-3 bg-white mb-4 rounded-3">
-                            <div class="tyn-chat-form-enter">
-                                <div class="tyn-chat-form-input" id="tynBotInput" placeholder="text" contenteditable></div>
-                                <ul class="tyn-list-inline me-n2 my-1">
-                                    <li><button class="btn btn-icon btn-white btn-md btn-pill" id="tynBotSend">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
-                                                <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z" />
-                                            </svg><!-- send-fill -->
-                                        </button></li>
-                                </ul>
-                            </div><!-- .tyn-chat-form-enter -->
-                        </div>
-                    </div><!-- .container -->
-                </div><!-- .tyn-chat-form -->
+                </div><!-- .tyn-section -->
             </div><!-- .tyn-main -->
         </div><!-- .tyn-content -->
+        <div class="tyn-footer border-top">
+            <div class="bg-white text-center py-3">
+                <p class="mb-0 small">2023 &copy; ConnectMe. Crafted By <a href="https://themeforest.net/user/themeyn" target="_blank" class="fw-semibold">Themeyn</a> </p>
+            </div>
+        </div><!-- .tyn-footer -->
+        <div class="tyn-quick-chat" id="tynQuickChat">
+            <button class="tyn-quick-chat-toggle js-toggle-quick">
+                <svg viewBox="0 0 43 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.2654 14.793C37.2654 14.793 45.0771 20.3653 41.9525 29.5311C41.9525 29.5311 41.3796 31.1976 39.0361 34.4264L42.4732 37.9677C42.4732 37.9677 43.3065 39.478 41.5879 39.9987H24.9229C24.9229 39.9987 19.611 40.155 14.8198 36.9782C14.8198 36.9782 12.1638 35.2076 9.76825 31.9787L18.6215 32.0308C18.6215 32.0308 24.298 31.9787 29.7662 28.3333C35.2344 24.6878 37.4217 18.6988 37.2654 14.793Z" fill="#60A5FA" />
+                    <path d="M34.5053 12.814C32.2659 1.04441 19.3506 0.0549276 19.3506 0.0549276C8.31004 -0.674164 3.31055 6.09597 3.31055 6.09597C-4.24076 15.2617 3.6751 23.6983 3.6751 23.6983C3.6751 23.6983 2.99808 24.6357 0.862884 26.5105C-1.27231 28.3854 1.22743 29.3748 1.22743 29.3748H17.3404C23.4543 28.7499 25.9124 27.3959 25.9124 27.3959C36.328 22.0318 34.5053 12.814 34.5053 12.814ZM19.9963 18.7301H9.16412C8.41419 18.7301 7.81009 18.126 7.81009 17.3761C7.81009 16.6261 8.41419 16.022 9.16412 16.022H19.9963C20.7463 16.022 21.3504 16.6261 21.3504 17.3761C21.3504 18.126 20.7358 18.7301 19.9963 18.7301ZM25.3708 13.314H9.12245C8.37253 13.314 7.76843 12.7099 7.76843 11.96C7.76843 11.21 8.37253 10.6059 9.12245 10.6059H25.3708C26.1207 10.6059 26.7248 11.21 26.7248 11.96C26.7248 12.7099 26.1103 13.314 25.3708 13.314Z" fill="#2563EB" />
+                </svg>
+                <span class="badge bg-primary top-0 end-0 position-absolute rounded-pill">2</span>
+            </button><!-- .tyn-quick-chat-toggle -->
+            <div class="tyn-quick-chat-box">
+                <div class="tyn-quick-chat-head">
+                    <div class="tyn-media-group">
+                        <div class="tyn-media tyn-size-rg">
+                            <img src="images/avatar/1.jpg" alt="">
+                        </div><!-- .tyn-media -->
+                        <div class="tyn-media-col">
+                            <div class="tyn-media-row">
+                                <h6 class="name">Jasmine Thompson</h6>
+                            </div>
+                            <div class="tyn-media-row has-dot-sap">
+                                <span class="meta">Active</span>
+                            </div>
+                        </div><!-- .tyn-media-col -->
+                    </div><!-- .tyn-media-group -->
+                </div><!-- .tyn-quick-chat-head -->
+                <div class="tyn-quick-chat-reply js-scroll-to-end">
+                    <div class="tyn-reply tyn-reply-quick" id="tynQuickReply">
+                        <div class="tyn-reply-item outgoing">
+                            <div class="tyn-reply-group">
+                                <div class="tyn-reply-bubble">
+                                    <div class="tyn-reply-text"> Do you know which App or feature it will require to set up. </div><!-- tyn-reply-text -->
+                                </div><!-- .tyn-reply-bubble -->
+                                <div class="tyn-reply-bubble">
+                                    <div class="tyn-reply-text"> These article helps. </div><!-- tyn-reply-text -->
+                                </div><!-- .tyn-reply-bubble -->
+                            </div><!-- .tyn-reply-group -->
+                        </div><!-- .tyn-reply-item -->
+                        <div class="tyn-reply-item incoming">
+                            <div class="tyn-reply-avatar">
+                                <div class="tyn-media tyn-size-md tyn-circle">
+                                    <img src="images/avatar/2.jpg" alt="">
+                                </div>
+                            </div><!-- .tyn-reply-avatar -->
+                            <div class="tyn-reply-group">
+                                <div class="tyn-reply-bubble">
+                                    <div class="tyn-reply-link">
+                                        <a class="tyn-reply-anchor" href="https://www.envato.com/atomic-power-plant-engine/">https://www.envato.com/atomic-power-plant-engine/</a>
+                                    </div>
+                                </div><!-- .tyn-reply-bubble -->
+                                <div class="tyn-reply-bubble">
+                                    <div class="tyn-reply-text"> I hope these article helps. </div>
+                                </div><!-- .tyn-reply-bubble -->
+                            </div><!-- .tyn-reply-group -->
+                        </div><!-- .tyn-reply-item -->
+                        <div class="tyn-reply-separator">May 10, 2022, 11:14 AM</div>
+                        <div class="tyn-reply-item outgoing">
+                            <div class="tyn-reply-group">
+                                <div class="tyn-reply-bubble">
+                                    <div class="tyn-reply-text"> Yes, you can reset your password online. Go to the login page, click on "Forgot Password," and follow the instructions to reset it. </div><!-- tyn-reply-text -->
+                                </div><!-- .tyn-reply-bubble -->
+                            </div><!-- .tyn-reply-group -->
+                        </div><!-- .tyn-reply-item -->
+                        <div class="tyn-reply-item incoming">
+                            <div class="tyn-reply-avatar">
+                                <div class="tyn-media tyn-size-md tyn-circle">
+                                    <img src="images/avatar/2.jpg" alt="">
+                                </div>
+                            </div><!-- .tyn-reply-avatar -->
+                            <div class="tyn-reply-group">
+                                <div class="tyn-reply-bubble">
+                                    <div class="tyn-reply-text"> How do I reset my password? Can I do it online? </div>
+                                </div><!-- .tyn-reply-bubble -->
+                            </div><!-- .tyn-reply-group -->
+                        </div><!-- .tyn-reply-item -->
+                    </div><!-- .tyn-reply -->
+                </div><!-- .tyn-quick-chat-reply -->
+                <div class="tyn-quick-chat-form">
+                    <div class="tyn-chat-form-input bg-light" id="tynQuickChatInput" contenteditable></div>
+                    <ul class="tyn-list-inline me-n2 my-1">
+                        <li><button class="btn btn-icon btn-white btn-sm btn-pill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+                                    <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z" />
+                                </svg><!-- send-fill -->
+                            </button></li>
+                    </ul><!-- .tyn-list-inline -->
+                </div><!-- .tyn-quick-chat-form -->
+                <button class="btn btn-danger btn-sm btn-icon top-0 end-0 position-absolute rounded-pill translate-middle js-toggle-quick">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg><!-- x-lg -->
+                </button>
+            </div><!-- .tyn-quick-chat-box -->
+        </div><!-- .tyn-quick-chat -->
     </div><!-- .tyn-root -->
     <!-- Page Scripts -->
     <script src="assets/js/bundle0ae1.js?v1310"></script>
@@ -510,5 +607,5 @@
 </body>
 
 
-<!-- Mirrored from connectme-html.themeyn.com/chat-bot-s2-new.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Oct 2024 19:34:31 GMT -->
+<!-- Mirrored from connectme-html.themeyn.com/chat-bot-welcome.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Oct 2024 19:34:29 GMT -->
 </html>
