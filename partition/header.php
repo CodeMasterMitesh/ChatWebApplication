@@ -12,3 +12,4 @@
     <link rel="stylesheet" href="assets/css/bundle0ae1.css?v1310">
     <link rel="stylesheet" href="assets/css/app0ae1.css?v1310">
 </head>
+<body class="tyn-body">

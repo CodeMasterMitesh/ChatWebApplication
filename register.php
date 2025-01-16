@@ -1,4 +1,72 @@
-<?php include("partition/header.php"); ?>
+<?php 
+include_once("config/connection.php");
+include("partition/header.php");
+if($_SERVER['REQUEST_METHOD'] == "POST"){
+
+    
+    $first_name = mysqli_real_escape_string($conn, trim($_POST['first_name']));
+    $last_name = mysqli_real_escape_string($conn, trim($_POST['last_name']));
+    $username = mysqli_real_escape_string($conn, trim($_POST['username']));
+    $email = mysqli_real_escape_string($conn, trim($_POST['email']));
+    $password = $_POST['password'];
+    $repeatPassword = $_POST['repeat_password'];
+    $termscondition = isset($_POST['muteFor']) ? $_POST['muteFor'] : null;
+
+    // Array to collect errors
+    $errors = [];
+
+    // Validate inputs
+    if (empty($first_name)) {
+        $errors[] = "First Name is required.";
+    }
+
+    if (empty($last_name)) {
+        $errors[] = "Last Name is required.";
+    }
+
+    if (empty($username)) {
+        $errors[] = "Username is required.";
+    }
+
+    if (empty($email)) {
+        $errors[] = "Email is required.";
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = "Invalid email format.";
+    }
+
+    if (empty($password)) {
+        $errors[] = "Password is required.";
+    } elseif (strlen($password) < 6) {
+        $errors[] = "Password must be at least 6 characters long.";
+    }
+
+    if ($password !== $repeatPassword) {
+        $errors[] = "Passwords do not match.";
+    }
+
+    if (empty($termscondition)) {
+        $errors[] = "You must accept the terms and conditions.";
+    }
+
+    // If there are errors, redirect back to the registration page
+    if (!empty($errors)) {
+        // Pass errors to the session
+        echo '<script>alert("' . implode("\\n", $errors) . '"); window.location.href="register.php";</script>';
+        exit();
+    }
+
+    // If no errors, hash the password and proceed with database insertion
+    $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
+
+    $sql = "INSERT INTO users (first_name,last_name,username,email,password) values ('$first_name','$last_name','$username','$email','$hashedPassword')";
+    $query = mysqli_query($conn, $sql);
+    if ($query) {
+        echo '<script>alert("Registration successful!"); window.location.href="login.php";</script>';
+    } else {
+        echo '<script>alert("Error: ' . mysqli_error($conn) . '"); window.location.href="register.php";</script>';
+    }
+}
+?>
 
 <body class="tyn-body">
     <div class="tyn-root">
@@ -7,7 +75,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-8">
                         <div class="mb-3 text-center">
-                            <a class="tyn-logo tyn-logo-sm" href="index.html">
+                            <a class="tyn-logo tyn-logo-sm" href="index.php">
                                 <svg viewBox="0 0 225 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M37.2652 14.793C37.2652 14.793 45.0769 20.3653 41.9523 29.531C41.9523 29.531 41.3794 31.1975 39.0359 34.4264L42.473 37.9677C42.473 37.9677 43.3063 39.4779 41.5877 39.9987H24.9228C24.9228 39.9987 19.6108 40.155 14.8196 36.9782C14.8196 36.9782 12.1637 35.2075 9.76807 31.9787L18.6213 32.0308C18.6213 32.0308 24.2978 31.9787 29.766 28.3332C35.2342 24.6878 37.4215 18.6988 37.2652 14.793Z" fill="#60A5FA" />
                                     <path d="M34.5053 12.814C32.2659 1.04441 19.3506 0.0549276 19.3506 0.0549276C8.31004 -0.674164 3.31055 6.09597 3.31055 6.09597C-4.24076 15.2617 3.6751 23.6983 3.6751 23.6983C3.6751 23.6983 2.99808 24.6357 0.862884 26.5105C-1.27231 28.3854 1.22743 29.3748 1.22743 29.3748H17.3404C23.4543 28.7499 25.9124 27.3959 25.9124 27.3959C36.328 22.0318 34.5053 12.814 34.5053 12.814ZM19.9963 18.7301H9.16412C8.41419 18.7301 7.81009 18.126 7.81009 17.3761C7.81009 16.6261 8.41419 16.022 9.16412 16.022H19.9963C20.7463 16.022 21.3504 16.6261 21.3504 17.3761C21.3504 18.126 20.7358 18.7301 19.9963 18.7301ZM25.3708 13.314H9.12245C8.37253 13.314 7.76843 12.7099 7.76843 11.96C7.76843 11.21 8.37253 10.6059 9.12245 10.6059H25.3708C26.1207 10.6059 26.7248 11.21 26.7248 11.96C26.7248 12.7099 26.1103 13.314 25.3708 13.314Z" fill="#2563EB" />
@@ -18,50 +86,68 @@
                         <div class="card border-0">
                             <div class="p-4">
                                 <h3>Create Account</h3>
-                                <div class="row g-3 gx-4">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label class="form-label" for="username">Your Name</label>
-                                            <div class="form-control-wrap">
-                                                <input type="text" class="form-control" id="username" placeholder="yourname">
-                                            </div>
-                                        </div><!-- .form-group -->
-                                    </div><!-- .col -->
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label class="form-label" for="email-address">Email Address</label>
-                                            <div class="form-control-wrap">
-                                                <input type="text" class="form-control" id="email-address" placeholder="youremail@example.com">
-                                            </div>
-                                        </div><!-- .form-group -->
-                                    </div><!-- .col -->
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label class="form-label" for="password">Password</label>
-                                            <div class="form-control-wrap">
-                                                <input type="password" class="form-control" id="password" placeholder="password">
-                                            </div>
-                                        </div><!-- .form-group -->
-                                    </div><!-- .col -->
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label class="form-label" for="repeat-password">Password Repeat</label>
-                                            <div class="form-control-wrap">
-                                                <input type="password" class="form-control" id="repeat-password" placeholder="password again">
-                                            </div>
-                                        </div><!-- .form-group -->
-                                    </div><!-- .col -->
-                                    <div class="col-12">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="muteFor" id="privacy-term-agree">
-                                            <label class="form-check-label" for="privacy-term-agree"> I agree with <a href="#">privacy policy &amp; terms</a>
-                                            </label>
-                                        </div><!-- .form-check -->
-                                    </div><!-- .col -->
-                                    <div class="col-12">
-                                        <a class="btn btn-primary w-100" href="index.html">Account Register</a>
-                                    </div><!-- .col -->
-                                </div><!-- .row -->
+                                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                                    <div class="row g-3 gx-4">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="firstname">First Name</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" id="firstname" name="first_name" value="" placeholder="firstname">
+                                                </div>
+                                            </div><!-- .form-group -->
+                                        </div><!-- .col -->
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="lastname">Last Name</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" id="lastname" name="last_name" value="" placeholder="lastname">
+                                                </div>
+                                            </div><!-- .form-group -->
+                                        </div><!-- .col -->
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="username">User Name</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" name="username" value="" id="username" placeholder="v">
+                                                </div>
+                                            </div><!-- .form-group -->
+                                        </div><!-- .col -->
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="email-address">Email Address</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" id="email-address" name="email" value="" placeholder="youremail@example.com">
+                                                </div>
+                                            </div><!-- .form-group -->
+                                        </div><!-- .col -->
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="password">Password</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="password" class="form-control" name="password" value="" id="password" placeholder="password">
+                                                </div>
+                                            </div><!-- .form-group -->
+                                        </div><!-- .col -->
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="repeat-password">Password Repeat</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="password" class="form-control" name="repeat_password" value="" id="repeat-password" placeholder="password again">
+                                                </div>
+                                            </div><!-- .form-group -->
+                                        </div><!-- .col -->
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="muteFor" id="privacy-term-agree">
+                                                <label class="form-check-label" for="privacy-term-agree"> I agree with <a href="#">privacy policy &amp; terms</a>
+                                                </label>
+                                            </div><!-- .form-check -->
+                                        </div><!-- .col -->
+                                        <div class="col-12">
+                                            <input class="btn btn-primary w-100" type="submit" value="Account Register">
+                                        </div><!-- .col -->
+                                    </div><!-- .row -->
+                                </form>
                             </div><!-- .p-4 -->
                             <div class="p-4 border-top border-light">
                                 <div class="row justify-content-center">
@@ -84,7 +170,7 @@
                             </div><!-- .p-4 -->
                         </div><!-- .card -->
                         <div class="text-center mt-4">
-                            <p class="small">Already have an account? <a href="login.html">Login</a></p>
+                            <p class="small">Already have an account? <a href="login.php">Login</a></p>
                         </div>
                     </div><!-- .col -->
                 </div><!-- .row -->
@@ -183,11 +269,4 @@
             </div><!-- .tyn-quick-chat-box -->
         </div><!-- .tyn-quick-chat -->
     </div><!-- .tyn-root -->
-    <!-- Page Scripts -->
-    <script src="assets/js/bundle0ae1.js?v1310"></script>
-    <script src="assets/js/app0ae1.js?v1310"></script>
-</body>
-
-
-<!-- Mirrored from connectme-html.themeyn.com/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Oct 2024 19:34:31 GMT -->
-</html>
+    <?php include("partition/footer.php"); ?>

@@ -7,7 +7,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-4 col-lg-5 col-md-7 col-sm-9">
                         <div class="my-3 text-center">
-                            <a class="tyn-logo tyn-logo-sm" href="index.html">
+                            <a class="tyn-logo tyn-logo-sm" href="index.php">
                                 <svg viewBox="0 0 225 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M37.2652 14.793C37.2652 14.793 45.0769 20.3653 41.9523 29.531C41.9523 29.531 41.3794 31.1975 39.0359 34.4264L42.473 37.9677C42.473 37.9677 43.3063 39.4779 41.5877 39.9987H24.9228C24.9228 39.9987 19.6108 40.155 14.8196 36.9782C14.8196 36.9782 12.1637 35.2075 9.76807 31.9787L18.6213 32.0308C18.6213 32.0308 24.2978 31.9787 29.766 28.3332C35.2342 24.6878 37.4215 18.6988 37.2652 14.793Z" fill="#60A5FA" />
                                     <path d="M34.5053 12.814C32.2659 1.04441 19.3506 0.0549276 19.3506 0.0549276C8.31004 -0.674164 3.31055 6.09597 3.31055 6.09597C-4.24076 15.2617 3.6751 23.6983 3.6751 23.6983C3.6751 23.6983 2.99808 24.6357 0.862884 26.5105C-1.27231 28.3854 1.22743 29.3748 1.22743 29.3748H17.3404C23.4543 28.7499 25.9124 27.3959 25.9124 27.3959C36.328 22.0318 34.5053 12.814 34.5053 12.814ZM19.9963 18.7301H9.16412C8.41419 18.7301 7.81009 18.126 7.81009 17.3761C7.81009 16.6261 8.41419 16.022 9.16412 16.022H19.9963C20.7463 16.022 21.3504 16.6261 21.3504 17.3761C21.3504 18.126 20.7358 18.7301 19.9963 18.7301ZM25.3708 13.314H9.12245C8.37253 13.314 7.76843 12.7099 7.76843 11.96C7.76843 11.21 8.37253 10.6059 9.12245 10.6059H25.3708C26.1207 10.6059 26.7248 11.21 26.7248 11.96C26.7248 12.7099 26.1103 13.314 25.3708 13.314Z" fill="#2563EB" />
@@ -28,13 +28,13 @@
                                         </div>
                                     </div><!-- .col -->
                                     <div class="col-12">
-                                        <a class="btn btn-primary w-100" href="login.html">Reset Password</a>
+                                        <a class="btn btn-primary w-100" href="login.php">Reset Password</a>
                                     </div><!-- .col -->
                                 </div><!-- .row -->
                             </div>
                         </div><!-- .card -->
                         <div class="mt-4">
-                            <p class="small">Some how remembered? <a href="login.html">Login</a></p>
+                            <p class="small">Some how remembered? <a href="login.php">Login</a></p>
                         </div>
                     </div><!-- .col -->
                 </div><!-- .row -->
@@ -133,11 +133,4 @@
             </div><!-- .tyn-quick-chat-box -->
         </div><!-- .tyn-quick-chat -->
     </div><!-- .tyn-root -->
-    <!-- Page Scripts -->
-    <script src="assets/js/bundle0ae1.js?v1310"></script>
-    <script src="assets/js/app0ae1.js?v1310"></script>
-</body>
-
-
-<!-- Mirrored from connectme-html.themeyn.com/forgot.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Oct 2024 19:34:31 GMT -->
-</html>
+    <?php include("partition/footer.php"); ?>
